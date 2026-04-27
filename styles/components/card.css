@@ -1,0 +1,72 @@
+/* ===========================================
+      Contenedor de las cards
+==============================================*/
+.services__cards-container {
+    display: grid;
+    justify-content: center;
+    margin: 0 24px;
+    row-gap: 24px;
+}
+
+@media (width > 769px) {
+    .services__cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (width > 1025px) {
+    .services__cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===========================================
+                    Cards
+==============================================*/
+
+.card {
+    text-align: center;
+    border: 1px  solid var(--tertiary-950);
+    border-radius: 4px;
+    padding: 0 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* ===========================================
+                    Ícons
+==============================================*/
+
+.card__icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.card__icon--main {
+    height: 48px;
+    width: 48px;
+}
+
+.card__icon--secondary {
+    height: 36px;
+    width: 36px;
+}
+
+/* ===========================================
+                    BreakPoints
+==============================================*/
+/* 
+        sm 640px        Teléfonos grandes
+        md 768px        Tablets
+        lg 1024px       Laptops
+        xl 1280px       Escritorio
+        2xl 1536px      Pantallas Grandes 
+*/
